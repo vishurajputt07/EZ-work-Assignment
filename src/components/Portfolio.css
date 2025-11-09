@@ -1,0 +1,148 @@
+.portfolio-container {
+  background-image: url("/BG.png");
+    background-size: cover;       /* make it cover entire area */
+  background-position: center;  /* center it */
+  background-repeat: repeat;
+  min-height: 100vh;            /* full viewport height */
+  width: 100%;
+  color: #333;
+  font-family: "Arial", serif;
+
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.footer-vector {
+  position: absolute;
+  bottom: -40%;
+  right: -45%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 200px;
+  opacity: 1;
+  pointer-events: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+
+
+main {
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+}
+
+.title {
+margin-top: 60px;
+  font-size: 32px;
+  font-family: "Times New Roman", serif;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.film-reel {
+  position: relative;
+  background-color: #d0cecc;
+  display: inline-block;
+  padding: 50px 20px;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 2px #ababab);
+}
+
+/* Top and bottom film strips */
+.film-strip-top,
+.film-strip-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.frame{
+    position: absolute;
+    margin-top: 40px;
+    width: 640px;
+}
+
+/* Video player wrapper with side overlays */
+.video-player-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-overlay {
+  width: 60px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s;
+}
+
+.side-overlay:hover {
+  color: #f28c65;
+}
+
+.side-overlay.left {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.side-overlay.right {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.video-player {
+  border-radius: 14px;
+  border: 3px solid #d0cecc;
+  width: 640px;
+  height: 360px;
+  margin-top: 40px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+}
+.cam1{
+    position: absolute;
+    right: 100%;
+    width: 200px;
+    bottom: -4%;
+
+}
+
+/* Left camera decoration */
+.decor-left {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Right arcs decoration */
+.decor-right {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  opacity: 0.6;
+  pointer-events: none;
+}

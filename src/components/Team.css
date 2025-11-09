@@ -1,0 +1,168 @@
+.team-section {
+  background-image: url("/BG.png");
+  background-size: cover; /* make it cover entire area */
+  background-position: center; /* center it */
+  background-repeat: repeat;
+  min-height: 100vh; /* full viewport height */
+  width: 100%;
+  color: #333;
+  position: relative;
+
+  padding: 80px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* Sticky Note */
+.note-img {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  width: 450px;
+  z-index: 1;
+}
+
+/* India Gate Illustration */
+.india-gate {
+  position: absolute;
+  bottom: 0px;
+  left: 60px;
+  width: 270px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+/* Center Team Visuals */
+.team-center {
+  transform: translate(200px, 90px) scale(1.2);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Common arrow styles */
+.arrow {
+  position: absolute;
+  width: 95px;
+  height: auto;
+}
+
+/* LEFT ARROW */
+.arrow-left {
+  left: 31%;
+  top: 67%;
+  transform: translateY(-50%);
+}
+.left-label {
+  position: absolute;
+  left: 420px;
+  top: calc(72% + 50px);
+  font-size: 18px;
+  font-family: "Island Moments", cursive;
+}
+
+/* RIGHT ARROW */
+.arrow-right {
+  right: 34%;
+  top: 15%;
+  width: 60px;
+  transform: translateY(-50%);
+}
+.right-label {
+  position: absolute;
+  right: 485px;
+  top: -25%;
+  font-size: 17px;
+  font-family: "Island Moments", cursive;
+}
+
+/* UP ARROW */
+.arrow-up {
+  top: -36%;
+  left: 30%;
+  transform: translateX(-50%);
+}
+.up-label {
+  position: absolute;
+  right: 200px;
+  top: -52%;
+  font-size: 18px;
+  white-space: nowrap;
+  font-family: "Island Moments", cursive;
+}
+
+/* Center Silhouette */
+.silhouette-box {
+  position: relative;
+}
+.silhouette-img {
+  width: 280px;
+  height: auto;
+}
+
+/* Footer Line */
+.footer-text {
+  margin-top: 170px;
+  font-size: 20px;
+  color: #444;
+  position: relative; /* enables positioning */
+  left: 197px; /* move right — adjust this value as needed */
+}
+
+.button {
+  background-color: #ff6600; /* Orange background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #e55b00; /* Darker orange on hover */
+  transform: scale(1.07);
+  box-shadow: 0 6px 18px rgba(255, 102, 0, 0.5);
+}
+
+/* Active (click) effect */
+.button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 8px rgba(255, 102, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .note-img,
+  .india-gate {
+    display: none;
+  }
+
+  .note-text {
+    position: static;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .team-center {
+    flex-direction: column;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .labels {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}

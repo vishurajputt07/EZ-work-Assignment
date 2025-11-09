@@ -1,0 +1,158 @@
+.about-section {
+  background-image: url("/BG.png");
+    background-size: cover;       /* make it cover entire area */
+  background-position: center;  /* center it */
+  background-repeat: repeat;
+  min-height: 100vh;            /* full viewport height */
+  width: 100%;
+  color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 120px;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* LEFT SIDE */
+  .about-left {
+    flex: 1;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .about-title {
+    font-family: "halant", serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .about-desc {
+    font-size: 14px;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  
+  /* NOTES */
+
+  
+
+/* This controls the entire group */
+.stats-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50px, 10px) scale(1.4); /* move right/down & resize together */
+}
+
+/* Your existing overlap layout */
+.stats-container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat1,
+.stat2,
+.stat3 {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Left image */
+.stat1 {
+  left: 64%;
+  transform: translateX(-150%);
+  z-index: 1;
+}
+
+/* Center image */
+.stat2 {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Right image */
+.stat3 {
+  left: 50%;
+  transform: translateX(12%);
+  z-index: 3;
+}
+
+
+
+
+  
+  
+  
+  /* RIGHT SIDE */
+  .about-right {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    right: -10%;
+  }
+  
+  .right-text {
+    font-family: "Island Moments", cursive;
+    font-size: 45px;
+    line-height: 1.6;
+    color: #000000;
+    margin-top: -15px;
+    margin-bottom: 60px;
+    
+  }
+  
+  .brand-logos {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto; /* centers horizontally */
+  }
+  
+  .brand-single {
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+  }
+  
+  /* mountain image attached to bottom */
+  .mountain {
+    position: absolute;
+    bottom: -50%; /* sticks to bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* adjust size */
+    height: auto;
+  }
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+    }
+  
+    .about-right {
+      margin-top: 40px;
+    }
+  }
+  

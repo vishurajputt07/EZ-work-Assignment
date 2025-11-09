@@ -1,0 +1,104 @@
+.services-section {
+    background-image: url("/BG.png");
+    background-size: cover;       /* make it cover entire area */
+  background-position: center;  /* center it */
+  background-repeat: repeat;
+  min-height: 100vh;            /* full viewport height */
+  width: 100%;
+  color: #333;
+    text-align: center;
+    background-color: #fce9e2; /* soft peach background */
+    padding: 80px 0 0;
+    position: relative;
+  }
+  
+  .services-title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  .line {
+    margin-top: -20px;
+    width: 90vh;
+  }
+  
+  
+  .services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 42px;
+  }
+  
+  /* Each card */
+  .service-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: -10px;        /* all three equal visually */
+    margin-top: 30px; /* optional */
+  }
+  
+  .tape {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 100px;
+    z-index: 2;
+  }
+  
+  
+  .img1 {
+    width: 280px;  /* optional size fix */
+    height: auto;
+    rotate: 16deg;
+    border-radius: 0;
+  }
+  .tape1 {
+    position: absolute;
+    top: 11px;
+    left: 30%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 150px;
+    z-index: 2;
+  }
+
+
+  .img2 {
+    width: 250px;  /* optional size fix */
+    height: auto;
+    margin-top: 45px;
+    border-radius: 0;
+  }
+  .tape2 {
+    position: absolute;
+    top: 20px;
+    left: 57%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 150px;
+    z-index: 2;
+  }
+
+
+  .img3 {
+    width: 280px;  /* optional size fix */
+    height: auto;
+    rotate: -16deg;
+    border-radius: 0;
+  }
+  .tape3 {
+    position: absolute;
+    top: 12px;
+    left: 74%;
+    transform: translateX(-50%) rotate(30deg);
+    width: 150px;
+    z-index: 2;
+  }
+  
+  .services-border{
+    width: 100%;
+  }
